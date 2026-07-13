@@ -129,7 +129,7 @@ display:none;
 width:100%;
 max-width:900px;
 padding:20px 0;
-animation:aparecer 1s;
+animation:aparecer 1s ease;
 }
 
 @keyframes aparecer{
