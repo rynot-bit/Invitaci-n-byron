@@ -329,3 +329,19 @@ padding:25
 #principal {
     display: block !important;
 }
+.tapa {
+    transition: transform 1s ease;
+    transform-origin: top center;
+}
+
+.envelope.abierto .tapa {
+    transform: rotateX(180deg);
+}
+
+.carta {
+    transition: transform 1s ease;
+}
+
+.envelope.abierto .carta {
+    transform: translateY(-80px);
+}
