@@ -1,11 +1,6 @@
-/* Animaciones principales */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes slideDown {
@@ -20,47 +15,24 @@
 }
 
 @keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }
 
 @keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
 }
 
 @keyframes float {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
 }
 
 @keyframes slideInLeft {
     from {
         opacity: 0;
         transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
     }
     to {
         opacity: 1;
@@ -80,54 +52,16 @@
 }
 
 @keyframes shake {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    10%, 30%, 50%, 70%, 90% {
-        transform: translateX(-5px);
-    }
-    20%, 40%, 60%, 80% {
-        transform: translateX(5px);
-    }
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
 }
 
 @keyframes glow {
-    0%, 100% {
-        box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
-    }
-    50% {
-        box-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
-    }
+    0%, 100% { box-shadow: 0 0 5px rgba(255, 107, 107, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 107, 107, 0.8); }
 }
 
-@keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1);
-    }
-    14% {
-        transform: scale(1.1);
-    }
-    28% {
-        transform: scale(1);
-    }
-    42% {
-        transform: scale(1.1);
-    }
-    70% {
-        transform: scale(1);
-    }
-}
-
-/* Animaciones específicas */
 .detail-item {
     animation: slideInLeft 0.6s ease-out forwards;
 }
@@ -144,40 +78,14 @@
     animation: scaleUp 0.6s ease-out forwards;
 }
 
-.countdown-item:nth-child(1) {
-    animation-delay: 0s;
-}
+.countdown-item:nth-child(1) { animation-delay: 0s; }
+.countdown-item:nth-child(2) { animation-delay: 0.15s; }
+.countdown-item:nth-child(3) { animation-delay: 0.3s; }
+.countdown-item:nth-child(4) { animation-delay: 0.45s; }
 
-.countdown-item:nth-child(2) {
-    animation-delay: 0.15s;
-}
+.btn { transition: all 0.3s ease; }
+.btn:active { animation: scaleUp 0.3s ease; }
 
-.countdown-item:nth-child(3) {
-    animation-delay: 0.3s;
-}
+.envelope:hover { animation: glow 1.5s ease-in-out infinite; }
 
-.countdown-item:nth-child(4) {
-    animation-delay: 0.45s;
-}
-
-.btn {
-    transition: all 0.3s ease;
-}
-
-.btn:active {
-    animation: scaleUp 0.3s ease;
-}
-
-/* Efecto de hover */
-.envelope:hover {
-    animation: glow 1.5s ease-in-out infinite;
-}
-
-/* Animación de confirmación */
-.confirmation-message {
-    animation: slideInLeft 0.8s ease-out;
-}
-
-.confirmation-message h1 {
-    animation: heartbeat 1s ease-in-out;
-}
+.confirmation-message { animation: slideInLeft 0.8s ease-out; }
