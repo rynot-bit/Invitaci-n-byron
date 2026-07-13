@@ -345,7 +345,25 @@ font-size:28px;
 }
 
 .envelope.abierto .carta {
-    transform: translateY(-100px);
+    transform: translateY(-140px);
+}
+
+
+/* efecto más elegante al abrir */
+.envelope.abierto {
+    animation: abrirSobre .8s ease;
+}
+
+@keyframes abrirSobre {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 /* Entrada del boleto desde el sobre */
 
