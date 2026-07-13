@@ -553,3 +553,43 @@ border-top:2px dashed #d4af37;
 padding-top:20px;
 }
 }
+/* AJUSTE FINAL BOLETO ESTADIO */
+
+.estadio{
+    display:block;
+    max-width:900px;
+}
+
+.estadio .cabecera-boleto{
+    letter-spacing:3px;
+}
+
+.estadio .cuerpo-boleto{
+    min-height:260px;
+}
+
+.estadio .qr{
+    width:100px;
+    height:100px;
+    margin:15px auto;
+    background:
+    repeating-linear-gradient(
+    45deg,
+    #000,
+    #000 5px,
+    #fff 5px,
+    #fff 10px
+    );
+    color:transparent;
+    border:4px solid white;
+}
+
+@media(max-width:768px){
+    .estadio .cuerpo-boleto{
+        padding:20px;
+    }
+
+    .datos-boleto h1{
+        font-size:36px;
+    }
+}
