@@ -413,3 +413,58 @@ font-size:28px;
 .sello:active{
     transform:translate(-50%,-50%) scale(.9);
 }
+/* NUEVO DISEÑO BOLETO ESTADIO */
+
+.ticket{
+    position:relative;
+    background:linear-gradient(135deg,#0b1f3a,#123f73);
+    color:white;
+    border-radius:25px;
+    overflow:hidden;
+    border:3px solid #d4af37;
+}
+
+.ticket::before,
+.ticket::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:35px;
+    height:35px;
+    background:#04152d;
+    border-radius:50%;
+    transform:translateY(-50%);
+    z-index:5;
+}
+
+.ticket::before{
+    left:-18px;
+}
+
+.ticket::after{
+    right:-18px;
+}
+
+.lado-izquierdo{
+    background:transparent;
+    color:white;
+}
+
+.lado-derecho{
+    background:#04152d;
+}
+
+.ticket h1{
+    color:#d4af37;
+    text-shadow:0 0 10px rgba(212,175,55,.5);
+}
+
+.edad{
+    background:#d4af37;
+    color:#04152d;
+}
+
+.qr{
+    background:white;
+    color:#04152d;
+}
