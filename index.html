@@ -157,9 +157,13 @@ function abrirInvitacion(){
 
     sobre.classList.add("abierto");
 
-    setTimeout(function(){
-        contenido.style.display = "block";
-        sobreSeccion.style.display = "none";
+    contenido.style.display = "block";
+
+setTimeout(function(){
+    contenido.classList.add("mostrar");
+    sobreSeccion.style.display = "none";
+},50);
+  
     },800);
 
 }
