@@ -1,3 +1,9 @@
 function abrirInvitacion(){
-    alert("El botón funciona");
+
+    const sobre = document.querySelector(".envelope");
+    
+    if (sobre) {
+        sobre.classList.add("abierto");
+    }
+
 }
