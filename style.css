@@ -352,3 +352,10 @@ font-size:28px;
 .carta {
     transition: transform 1s ease;
 }
+.envelope.abierto .tapa{
+    transform:rotateX(180deg);
+}
+
+.envelope.abierto .carta{
+    transform:translateY(-100px);
+}
