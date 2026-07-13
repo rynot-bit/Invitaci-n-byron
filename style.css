@@ -322,3 +322,10 @@ padding:25
 .cargado #loader {
     display: none;
 }
+#loader {
+    display: none !important;
+}
+
+#principal {
+    display: block !important;
+}
