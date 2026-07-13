@@ -1,143 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Invitación de Cumpleaños - Byron!</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/responsive.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación Byron 8 años</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div id="envelope-screen" class="screen active">
-            <div class="envelope-container">
-                <div class="envelope" id="envelope">
-                    <div class="envelope-flap"></div>
-                    <div class="envelope-body">
-                        <p class="envelope-text">Toca el sobre</p>
-                    </div>
-                </div>
-            </div>
-            <p class="envelope-instruction">📬 Haz clic en el sobre para abrir tu invitación</p>
-        </div>
 
-        <div id="invitation-screen" class="screen">
-            <div class="background-decoration">
-                <div class="balloon balloon-1"></div>
-                <div class="balloon balloon-2"></div>
-                <div class="balloon balloon-3"></div>
-                <div class="balloon balloon-4"></div>
-                <div class="stars"></div>
-            </div>
+<div class="sobre" onclick="abrirInvitacion()">
+    <div class="tapa"></div>
+    <div class="texto">Toca para abrir</div>
+</div>
 
-            <div class="invitation-content">
-                <div class="invitation-header">
-                    <h1 class="title">¡CUMPLEAÑOS!</h1>
-                    <p class="subtitle">¡Byron cumple 8 años!</p>
-                </div>
+<div class="invitacion" id="invitacion">
 
-                <div class="birthday-section">
-                    <div class="birthday-image">
-                        <div class="image-placeholder">🎂</div>
-                    </div>
-                </div>
+<h1>🎉 ¡Estás Invitado! 🎉</h1>
 
-                <div class="event-details">
-                    <div class="detail-item">
-                        <span class="detail-icon">📅</span>
-                        <div class="detail-text">
-                            <p class="detail-label">Fecha</p>
-                            <p class="detail-value">25 de Junio, 2026</p>
-                        </div>
-                    </div>
+<h2>Byron cumple 8 años</h2>
 
-                    <div class="detail-item">
-                        <span class="detail-icon">🕕</span>
-                        <div class="detail-text">
-                            <p class="detail-label">Hora</p>
-                            <p class="detail-value">5:00 PM</p>
-                        </div>
-                    </div>
+<p>
+Prepárate para una celebración llena de diversión,
+sorpresas y momentos increíbles.
+</p>
 
-                    <div class="detail-item">
-                        <span class="detail-icon">📍</span>
-                        <div class="detail-text">
-                            <p class="detail-label">Ubicación</p>
-                            <p class="detail-value">Calle Venus Mz 13A Lt 4</p>
-                        </div>
-                    </div>
-                </div>
+<div class="boleto">
+<h3>🎟️ PASE ESPECIAL</h3>
+<p>Invitado VIP</p>
+<p>25 JULIO 2026</p>
+<p>5:00 PM</p>
+</div>
 
-                <div class="countdown-section">
-                    <h2>Cuenta Regresiva</h2>
-                    <div class="countdown" id="countdown">
-                        <div class="countdown-item">
-                            <span id="days" class="countdown-value">00</span>
-                            <p class="countdown-label">Días</p>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="hours" class="countdown-value">00</span>
-                            <p class="countdown-label">Horas</p>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="minutes" class="countdown-value">00</span>
-                            <p class="countdown-label">Minutos</p>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="seconds" class="countdown-value">00</span>
-                            <p class="countdown-label">Segundos</p>
-                        </div>
-                    </div>
-                </div>
+<div class="datos">
+<p>📍 Calle Venus Mz 13A Lt 4</p>
+<p>Col. Lomas de la Estancia</p>
+</div>
 
-                <div class="map-section">
-                    <h2>¿Dónde es?</h2>
-                    <div id="map-container" class="map-container">
-                        <div class="map-placeholder">
-                            <p>🗺️ Ubicación</p>
-                            <p class="map-address">Calle Venus Mz 13A Lt 4</p>
-                        </div>
-                    </div>
-                </div>
+<button onclick="alert('¡Te esperamos en la fiesta de Byron! 🎂')">
+Confirmar asistencia
+</button>
 
-                <div class="confirmation-section">
-                    <h2>¿Confirmas tu asistencia?</h2>
-                    <div class="button-group">
-                        <button class="btn btn-yes" id="btnYes">✅ Sí, iré!</button>
-                        <button class="btn btn-no" id="btnNo">❌ No podré ir</button>
-                    </div>
-                </div>
+</div>
 
-                <div class="contact-section">
-                    <p>Cualquier duda, contacta a:</p>
-                    <p class="contact-info">📱 Teléfono o correo</p>
-                </div>
+<script src="script.js"></script>
 
-                <div class="controls">
-                    <button class="btn btn-small" id="btnMusic">🔊 Música</button>
-                    <button class="btn btn-small" id="btnConfetti">🎉 Sorpresa</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="confirmation-screen" class="screen">
-            <div class="confirmation-container">
-                <div id="confirmation-message" class="confirmation-message"></div>
-                <button class="btn btn-back" onclick="window.location.reload()">Volver a la invitación</button>
-            </div>
-        </div>
-    </div>
-
-    <canvas id="fireworks-canvas"></canvas>
-
-    <script src="js/confetti.js"></script>
-    <script src="js/fireworks.js"></script>
-    <script src="js/envelope.js"></script>
-    <script src="js/countdown.js"></script>
-    <script src="js/maps.js"></script>
-    <script src="js/audio.js"></script>
-    <script src="js/animations-utils.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
