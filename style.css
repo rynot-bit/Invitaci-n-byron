@@ -468,3 +468,78 @@ font-size:28px;
     background:white;
     color:#04152d;
 }
+.estadio{
+    background:linear-gradient(120deg,#071b38,#0d4ea6);
+    border:3px solid #d4af37;
+    color:white;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.cabecera-boleto{
+    background:#04152d;
+    padding:20px;
+    font-size:32px;
+    font-family:'Bebas Neue';
+    text-align:center;
+    color:#d4af37;
+}
+
+.cabecera-boleto span{
+    display:block;
+    font-size:22px;
+    color:white;
+}
+
+.cuerpo-boleto{
+    display:grid;
+    grid-template-columns:170px 1fr 160px;
+    gap:20px;
+    padding:25px;
+}
+
+.foto-boleto img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #d4af37;
+}
+
+.datos-boleto h1{
+    font-size:40px;
+    color:#d4af37;
+}
+
+.datos-boleto h2{
+    font-size:28px;
+}
+
+.linea{
+    height:2px;
+    background:#d4af37;
+    margin:15px 0;
+}
+
+.zona-boleto{
+    text-align:center;
+    border-left:2px dashed #d4af37;
+}
+
+.zona-boleto h3{
+    font-size:45px;
+    color:#d4af37;
+}
+
+@media(max-width:768px){
+.cuerpo-boleto{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.zona-boleto{
+border-left:none;
+border-top:2px dashed #d4af37;
+padding-top:20px;
+}
+}
