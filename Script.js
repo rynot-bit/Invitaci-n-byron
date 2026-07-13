@@ -1,9 +1,10 @@
 function abrirInvitacion(){
 
-    const sobre = document.querySelector(".envelope");
-    
-    if (sobre) {
-        sobre.classList.add("abierto");
-    }
+    document.querySelector(".envelope").classList.add("abierto");
+
+    setTimeout(function(){
+        document.getElementById("contenido").style.display = "block";
+        document.getElementById("sobre").style.display = "none";
+    },800);
 
 }
