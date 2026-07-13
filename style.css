@@ -345,3 +345,19 @@ padding:25
 .envelope.abierto .carta {
     transform: translateY(-80px);
 }
+.envelope .tapa {
+    transition: transform 1s ease;
+    transform-origin: top center;
+}
+
+.envelope.abierto .tapa {
+    transform: rotateX(180deg);
+}
+
+.envelope.abierto .carta {
+    transform: translateY(-80px);
+}
+
+.carta {
+    transition: transform 1s ease;
+}
