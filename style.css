@@ -493,37 +493,47 @@ font-size:28px;
 
 .cuerpo-boleto{
     display:grid;
-    grid-template-columns:170px 1fr 160px;
-    gap:20px;
-    padding:25px;
+    grid-template-columns:160px 1fr 150px;
+    gap:25px;
+    padding:30px;
+    align-items:center;
+}
+
+.foto-boleto{
+    text-align:center;
 }
 
 .foto-boleto img{
-    width:150px;
-    height:150px;
-    border-radius:50%;
+    width:140px;
+    height:140px;
+    border-radius:12px;
     object-fit:cover;
-    border:5px solid #d4af37;
+    border:4px solid #d4af37;
+}
+
+.datos-boleto p{
+    margin:8px 0;
+    font-size:16px;
 }
 
 .datos-boleto h1{
-    font-size:40px;
-    color:#d4af37;
+    font-family:'Bebas Neue',sans-serif;
+    font-size:45px;
+    letter-spacing:2px;
 }
 
 .datos-boleto h2{
-    font-size:28px;
-}
-
-.linea{
-    height:2px;
-    background:#d4af37;
-    margin:15px 0;
+    color:#d4af37;
 }
 
 .zona-boleto{
-    text-align:center;
     border-left:2px dashed #d4af37;
+    padding-left:20px;
+}
+
+.zona-boleto h3{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:55px;
 }
 
 .zona-boleto h3{
