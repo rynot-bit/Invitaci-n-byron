@@ -315,3 +315,10 @@ font-size:28px;
 .lado-izquierdo,
 .lado-derecho{
 padding:25
+#loader {
+    display: flex;
+}
+
+.cargado #loader {
+    display: none;
+}
