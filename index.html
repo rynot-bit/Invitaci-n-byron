@@ -150,7 +150,19 @@ QR
 
 <script>
 function abrirInvitacion(){
-    alert("FUNCIONA");
+
+    const sobre = document.querySelector(".envelope");
+    const contenido = document.getElementById("contenido");
+    const sobreSeccion = document.getElementById("sobre");
+
+    sobre.classList.add("abierto");
+
+    setTimeout(function(){
+        contenido.style.display = "block";
+        sobreSeccion.style.display = "none";
+    },800);
+
+}
 }
 </script>
 
