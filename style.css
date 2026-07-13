@@ -1,0 +1,144 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:linear-gradient(180deg,#04152d,#0c2e57,#0a3d6d);
+overflow-x:hidden;
+min-height:100vh;
+color:#fff;
+}
+
+#loader{
+position:fixed;
+inset:0;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:#04152d;
+z-index:9999;
+transition:.8s;
+}
+
+.loader-logo{
+font-size:70px;
+margin-bottom:20px;
+animation:pulse 1.2s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.15);}
+100%{transform:scale(1);}
+}
+
+#principal{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:30px 15px 60px;
+}
+
+#sobre{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.mensaje h3{
+font-family:'Bebas Neue',sans-serif;
+letter-spacing:2px;
+font-size:30px;
+margin-bottom:30px;
+text-align:center;
+}
+
+.envelope{
+position:relative;
+width:340px;
+height:230px;
+perspective:1200px;
+}
+
+.carta{
+position:absolute;
+bottom:0;
+width:100%;
+height:190px;
+background:#0f5db8;
+border-radius:0 0 14px 14px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,.45);
+}
+
+.carta::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%;
+clip-path:polygon(0 0,50% 55%,100% 0,100% 100%,0 100%);
+background:#0b4a94;
+}
+
+.tapa{
+position:absolute;
+top:0;
+width:100%;
+height:120px;
+background:#176ed5;
+clip-path:polygon(0 0,100% 0,50% 100%);
+transform-origin:top;
+transition:1s ease;
+z-index:20;
+}
+
+.sello{
+position:absolute;
+left:50%;
+top:58%;
+transform:translate(-50%,-50%);
+width:82px;
+height:82px;
+border-radius:50%;
+background:#d4af37;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:bold;
+color:#08213f;
+cursor:pointer;
+border:5px solid #f7e08a;
+z-index:30;
+transition:.3s;
+}
+
+.sello:hover{
+transform:translate(-50%,-50%) scale(1.08);
+}
+
+#contenido{
+display:none;
+width:100%;
+max-width:900px;
+padding:20px 0;
+animation:aparecer 1s;
+}
+
+@keyframes aparecer{
+from{
+opacity:0;
+transform:translateY(60px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
