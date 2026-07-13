@@ -392,3 +392,24 @@ font-size:28px;
         opacity:1;
     }
 }
+.sello{
+    animation: brilloSello 1.8s infinite;
+}
+
+@keyframes brilloSello{
+    0%{
+        box-shadow:0 0 0 rgba(212,175,55,0);
+    }
+
+    50%{
+        box-shadow:0 0 25px rgba(212,175,55,.9);
+    }
+
+    100%{
+        box-shadow:0 0 0 rgba(212,175,55,0);
+    }
+}
+
+.sello:active{
+    transform:translate(-50%,-50%) scale(.9);
+}
