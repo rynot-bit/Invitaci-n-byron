@@ -770,3 +770,26 @@ transform:translateY(-200px);
     object-fit:cover;
     border-radius:4px;
 }
+.regalo{
+    margin:40px auto;
+    padding:25px;
+    max-width:700px;
+    text-align:center;
+    background:rgba(255,255,255,.08);
+    border:2px solid #d4af37;
+    border-radius:20px;
+    backdrop-filter:blur(8px);
+}
+
+.regalo h2{
+    color:#d4af37;
+    font-family:'Bebas Neue',sans-serif;
+    letter-spacing:2px;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.regalo p{
+    margin:10px 0;
+    line-height:1.6;
+}
