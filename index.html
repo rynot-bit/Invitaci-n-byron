@@ -147,6 +147,7 @@ target="_blank">
 </div>
 
 <script>
+<script>
 function abrirInvitacion(){
 
     const sobre = document.querySelector(".envelope");
@@ -157,12 +158,33 @@ function abrirInvitacion(){
 
     contenido.style.display = "block";
 
-setTimeout(function(){
-    contenido.classList.add("mostrar");
-    sobreSeccion.style.display = "none";
-},50);
-  
+    setTimeout(function(){
+        contenido.classList.add("mostrar");
+        sobreSeccion.style.display = "none";
+    },50);
 }
+
+const fecha = new Date("July 25, 2026 17:00:00").getTime();
+
+setInterval(function(){
+
+    const ahora = new Date().getTime();
+    const distancia = fecha - ahora;
+
+    document.getElementById("dias").innerHTML =
+        Math.floor(distancia/(1000*60*60*24));
+
+    document.getElementById("horas").innerHTML =
+        Math.floor((distancia%(1000*60*60*24))/(1000*60*60));
+
+    document.getElementById("minutos").innerHTML =
+        Math.floor((distancia%(1000*60*60))/(1000*60));
+
+    document.getElementById("segundos").innerHTML =
+        Math.floor((distancia%(1000*60))/1000);
+
+},1000);
+</script>
 </script>
 
 </body>
