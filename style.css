@@ -652,3 +652,72 @@ padding-top:20px;
     overflow:hidden;
     font-size:0;
 }
+/* FONDO ESTADIO PREMIUM */
+
+body{
+    background:
+    linear-gradient(
+        rgba(4,21,45,.85),
+        rgba(4,21,45,.95)
+    ),
+    url("img/estadio.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* luces de estadio */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background:
+    radial-gradient(
+        circle at 20% 10%,
+        rgba(255,255,255,.25),
+        transparent 25%
+    ),
+    radial-gradient(
+        circle at 80% 10%,
+        rgba(255,255,255,.25),
+        transparent 25%
+    );
+    z-index:-1;
+}
+
+
+/* efecto partículas */
+
+#principal::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(#ffffff33 1px,transparent 1px);
+    background-size:35px 35px;
+    animation:particulas 15s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes particulas{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-200px);
+}
+
+}
+
+
+/* brillo alrededor del boleto */
+
+.estadio{
+    box-shadow:
+    0 0 20px rgba(212,175,55,.5),
+    0 0 50px rgba(13,78,166,.8);
+}
