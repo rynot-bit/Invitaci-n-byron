@@ -468,14 +468,26 @@ font-size:28px;
     background:white;
     color:#04152d;
 }
+
 .estadio{
-    background:linear-gradient(120deg,#071b38,#0d4ea6);
+    position:relative;
+    background:
+    linear-gradient(
+        rgba(7,27,56,.90),
+        rgba(13,78,166,.90)
+    ),
+    repeating-linear-gradient(
+        90deg,
+        rgba(255,255,255,.05) 0px,
+        rgba(255,255,255,.05) 2px,
+        transparent 2px,
+        transparent 8px
+    );
     border:3px solid #d4af37;
     color:white;
     border-radius:20px;
     overflow:hidden;
 }
-
 .cabecera-boleto{
     background:#04152d;
     padding:20px;
