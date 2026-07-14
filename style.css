@@ -593,3 +593,34 @@ padding-top:20px;
         font-size:36px;
     }
 }
+.sello-vip{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#d4af37,#fff2a8,#d4af37);
+    color:#04152d;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:22px;
+    margin:0 auto 15px;
+    border:4px solid white;
+    box-shadow:0 0 20px rgba(212,175,55,.8);
+    animation:brilloVIP 2s infinite;
+    transform:rotate(-15deg);
+}
+
+@keyframes brilloVIP{
+    0%{
+        filter:brightness(1);
+    }
+
+    50%{
+        filter:brightness(1.5);
+    }
+
+    100%{
+        filter:brightness(1);
+    }
+}
