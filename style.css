@@ -789,13 +789,9 @@ transform:translateY(-200px);
     margin-bottom:15px;
 }
 
-.regalo p{
-    margin:10px 0;
-    line-height:1.6;
-}
 .aguila{
     position:fixed;
-    top:40%;
+    top:35%;
     left:-200px;
     width:180px;
     z-index:9999;
