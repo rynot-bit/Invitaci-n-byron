@@ -154,7 +154,12 @@ function abrirInvitacion(){
     const sobreSeccion = document.getElementById("sobre");
 
     sobre.classList.add("abierto");
-
+confetti({
+    particleCount: 180,
+    spread: 100,
+    origin: { y: 0.6 },
+    colors: ['#d4af37','#0d6efd','#ffffff']
+});
     contenido.style.display = "block";
 
     setTimeout(function(){
