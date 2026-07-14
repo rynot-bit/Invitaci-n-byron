@@ -834,3 +834,44 @@ transform:scale(.8);
 }
 
 }
+.aguila{
+    position:fixed;
+    top:35%;
+    left:-200px;
+    width:180px;
+    z-index:9999;
+    opacity:0;
+}
+
+.aguila img{
+    width:100%;
+}
+
+.aguila.volar{
+    animation:vueloAguila 2s ease forwards;
+}
+
+@keyframes vueloAguila{
+
+0%{
+left:-200px;
+opacity:0;
+transform:scale(.5);
+}
+
+30%{
+opacity:1;
+}
+
+70%{
+left:50%;
+transform:scale(1.2);
+}
+
+100%{
+left:120%;
+opacity:0;
+transform:scale(.8);
+}
+
+}
