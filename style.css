@@ -624,3 +624,19 @@ padding-top:20px;
         filter:brightness(1);
     }
 }
+.codigo-barra{
+    width:120px;
+    height:35px;
+    margin:10px auto;
+    background:
+    repeating-linear-gradient(
+    90deg,
+    #ffffff 0px,
+    #ffffff 3px,
+    #000000 3px,
+    #000000 5px
+    );
+    border:3px solid white;
+    overflow:hidden;
+    font-size:0;
+}
