@@ -721,3 +721,46 @@ transform:translateY(-200px);
     0 0 20px rgba(212,175,55,.5),
     0 0 50px rgba(13,78,166,.8);
 }
+/* CONTADOR */
+
+.contador{
+    margin:40px auto;
+    text-align:center;
+    color:white;
+}
+
+.contador h2{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:40px;
+    color:#d4af37;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+.tiempo{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.tiempo div{
+    background:rgba(255,255,255,.08);
+    border:2px solid #d4af37;
+    border-radius:15px;
+    width:90px;
+    padding:15px;
+    backdrop-filter:blur(8px);
+}
+
+.tiempo span{
+    display:block;
+    font-size:36px;
+    font-weight:bold;
+    color:#d4af37;
+}
+
+.tiempo small{
+    color:white;
+    font-size:14px;
+}
